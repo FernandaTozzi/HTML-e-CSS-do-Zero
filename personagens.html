@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clientes - Chatschool</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/pages/clientes.min.css" rel="stylesheet">
+</head>
+<body>
+<header id="header" class="page-clientes">
+  <div class="container">
+    <div class="row">
+      <div class="col col-desktop-3 col-6">
+        <a href="index.html">
+          <img src="images/logo.png" width="200px" alt="Logo da Chatschool">
+        </a>
+      </div>
+      <div class="col col-desktop-9 col-6">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="personagens.html"  style="background-color: #3f3c6b7f;">Personagens</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-desktop-12 title black-background">
+        <h1>Personagens</h1>
+        <h2>Quem você será em nosso mundo?</h2>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <section id="customers" class="section section-center">
+    <h2>Personagen Jogáveis:</h2>
+    <p class="subtitle">No início do jogo, o jogador terá a opção de selecionar um dos 4 protagonistas da história.</p>
+
+    <div class="container-characters">
+  
+      <div class="characters">
+
+        <!--MODAL-->
+        
+       <div class="charactername">
+           <ul>
+               <li>
+                   <h3>Alexa</h3>
+               </li>
+               <li>
+                       <a href="#" onclick="openModal('alexa', event)"><img class="btn-modal" src="images/characters/c3.png"> </a>
+               </li>
+               <li>
+                   <img class="item-img" src="img/characters/traits/knife-item.png" alt=""><img class="item-img" src="img/characters/traits/esmeralda.png" alt="">
+               </li>
+           </ul>
+       </div>
+       <div class="charactername">
+           <ul>
+               <li>
+                   <h3>Skyle</h3>
+               </li>
+               <li>
+                       <a href="#" onclick="openModal('skyle', event)"><img class="btn-modal" src="images/characters/sky.png"> </a>
+               </li>
+               <li>
+                   <img class="item-img" src="img/characters/traits/bow-item.png" alt=""><img class="item-img" src="img/characters/traits/safira.png" alt="">
+               </li>
+           </ul>
+       </div>
+       
+       <div class="charactername">
+           <ul>
+               <li>
+                   <h3>Maxine</h3>
+               </li>
+               <li>
+                       <a href="#" onclick="openModal('maxine', event)"><img class="btn-modal" src="images/characters/max.png"> </a>
+               </li>
+               <li>
+                   <img class="item-img" src="img/characters/traits/sword-item.png" alt=""><img class="item-img" src="img/characters/traits/ambar.png" alt="">
+               </li>
+           </ul>
+       </div>
+       
+       <div class="charactername">
+           <ul>
+               <li>
+                   <h3>Maxine</h3>
+               </li>
+               <li>
+                       <a href="#" onclick="openModal('shadow', event)"><img class="btn-modal" src="images/characters/shadow.png"> </a>
+               </li>
+               <li>
+                   <img class="item-img" src="img/characters/traits/shield-item.png" alt=""><img class="item-img" src="img/characters/traits/rubi.png" alt="">
+               </li>
+           </ul>
+       </div>
+       
+       
+        <div id="maxine" class="item-content" style="display: none;">
+           <div class="infocharacter">
+               <h4>Maxine</h4>
+          <img src="img/characters/max.png" class="modalprofile" alt="">
+          <h2>Descrição:</h2>
+          <p>Maxine é um aventureiro conhecido por suas táticas e movimentos de ataque, Maxine nasceu no reino de Lorem, e carrega consigo uma espada que é utilizada para destruir seus inimigos.</p>
+           </div>
+           <div class="itemscharacter">
+               <div class="traitscharacter">
+                   <ul>
+                       <li>Ataque:
+                           <img class="atack" src="img/characters/traits/sword.png" alt="">
+                           <img class="atack" src="img/characters/traits/sword.png" alt="">
+                           <img class="atack" src="img/characters/traits/sword.png" alt="">
+                           <img class="atack" src="img/characters/traits/sword.png" alt="">
+                           <img class="atack" src="img/characters/traits/sword_PB.png" alt="">
+                       </li>
+                       <li>Defesa:
+                           <img class="atack" src="img/characters/traits/shield.png" alt="">
+                           <img class="atack" src="img/characters/traits/shield.png" alt="">
+                           <img class="atack" src="img/characters/traits/shield_PB.png" alt="">
+                           <img class="atack" src="img/characters/traits/shield_PB.png" alt="">
+                           <img class="atack" src="img/characters/traits/shield_PB.png" alt="">
+                       </li>
+                       <li>Comida Favorita:</li>
+           
+                   </ul>
+               </div>
+           </div>
+        </div>
+        
+        <div id="skyle" class="item-content" style="display: none;">
+          <h4>Segunda duvida?</h4>
+          <p>Segundo texto do modal.</p>
+        </div>
+        
+        <!-- CODIGO PADRÃO -->
+        <div id="overlay" onclick="closeModal()">
+            <div id="modal" onclick="event.stopPropagation();">
+                <span class="modal-close" onclick="closeModal()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+                <div id="modal-content"></div>
+            </div>
+        </div>
+       
+       </div>
+    </div>
+  </section>
+</main>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col col-offset-desktop-1 col-desktop-3">
+      </div>
+      <div class="col col-desktop-3 social col-4">
+        <p><a href=""><img src="images/logo.png" width="200px" alt="Logo da Chatschool"></a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="copyright">
+  &copy; Algorithm Card - 2024 - Todos os direitos reservados
+</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+@import url('../styles.css');
+
+#header.page-equipe {
+    background-image: url("../../images/background-equipe.jpg") ;
+}
+
+#team {
+    background-color: #f3f0e7;
+}
+
+#team .img-box-round {
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgb(84, 209, 84);
+}
+
+#team .img-box-label:before {
+    display: none;
+}
+
+#team .row:first-child {
+    margin-bottom: 40px;
+}
+
+.img-equipe{
+    width: 150px;
+    height:150px;
+    border-radius: 100px;
+}
+
+.team-member .description {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+    .team-member {
+        position: relative;
+    }
+
+    .team-member:hover .description {
+        display: block;
+    }
+
+    .team-member .description {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 99;
+        width: 400px;
+    }
+
+    .team-member:nth-child(4) .description, .team-member:nth-child(5) .description {
+        left: auto;
+        right: 50%;
+    }
+}
+
+main{
+    background-color: #2C2D36;
+}
+
+
+.palette-container{
+    background-color:#1d1d23;
+    text-align: center;
+    width: 600px;
+    height:500px;
+    position: relative;
+    margin: 50px auto;
+    padding: 20px 50px;
+   
+}
+
+.imagens-palette{
+    padding-bottom: 25px;
+    border: 2px solid;
+    height:370px;
+    border-color: #4d4d4d;
+}
+
+.imagens-palette li img {
+    width: 80px;
+}
+.ul-palette {
+    list-style-type: none;
+    float: left;
+}
+.img-about-boss {    width: 300px;
+}
+#trocarimg {
+    margin-left: 50px;
+}
+.ataque{
+    width: 20px;
+}
+.black-background{
+    background-color: #0000008a;
+    width:500px;
+
+}
+.div-meio{
+    text-align: center;
+}
+
+.my-btn{
+    background-color: #4c4ec789;
+}
+
+.my-btn-activate{
+    background-color: #7577e2;
+}
+html{
+    background-color: #2C2D36;
+}
